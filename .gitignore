@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+*.sw?
+*~
+.idea/
+tmp/
+.coverage
+.coverage.*
+python
+.*cache
+.eggs
+.DS_Store
+.vscode
