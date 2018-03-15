@@ -145,11 +145,11 @@ def export_array(filename, array_name, target_array):
     # Generate a variable, containing the contents of the array
     # (x,y pairs only) in OpenSCAD format. Note: If the precision is too high,
     #  OpenSCAD screws up the floating point math.
-    with open(filename, 'w') as f:
-        f.write(f'\n\n {array_name} = [')
+    with open(filename, 'a') as f:
+        f.write(f'{array_name} = [')
         for a in target_array:
-            f.write(f'[{a[0]:.7f}, {a[1]:.7f} ],')
-        f.write('];\n\n')
+            f.write(f'[{a[0]:.7f}, {a[1]:.7f}],')
+        f.write('];\n')
     return
 
 
