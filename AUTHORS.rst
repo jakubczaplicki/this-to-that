@@ -5,4 +5,4 @@ Original Author
 
 Contributors
 
-* @JakubCzaplicki
+* @jakubczaplicki
